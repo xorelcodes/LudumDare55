@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://cdenpi8uyjkyy"]
+[gd_scene load_steps=3 format=3 uid="uid://cdenpi8uyjkyy"]
+
+[ext_resource type="PackedScene" uid="uid://d0ygjwq6f13i7" path="res://Scenes/Battle/battle_manager.tscn" id="1_t0ao5"]
+[ext_resource type="PackedScene" uid="uid://b6k8lktfyaa8n" path="res://Scenes/World/world_manager.tscn" id="2_2a317"]
 
 [node name="Main" type="Node"]
+
+[node name="BasicCombat" parent="." instance=ExtResource("1_t0ao5")]
+
+[node name="WorldManager" parent="." instance=ExtResource("2_2a317")]

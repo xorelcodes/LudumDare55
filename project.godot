@@ -13,6 +13,7 @@ config_version=5
 config/name="Fantastical Felines"
 config/description="RPG where you summon magical cats to help and fight alongside you!"
 config/version=".01"
+run/main_scene="res://Scenes/main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
