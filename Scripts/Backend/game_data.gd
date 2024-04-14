@@ -1,0 +1,7 @@
+extends Node
+
+var game_diffuclty = 0
+
+enum DIFFICULTY_OPTIONS {EASY, NORMAL, HARD}
+
+enum STATUS_EFFECTS{NONE, POISON, HASTE, INVULN}

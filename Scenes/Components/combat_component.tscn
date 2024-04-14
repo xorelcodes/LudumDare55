@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4hgrpf6g5yrh"]
+
+[ext_resource type="Script" path="res://Scenes/Components/combat_component.gd" id="1_bnsca"]
+
+[node name="CombatComponent" type="Node2D"]
+script = ExtResource("1_bnsca")
