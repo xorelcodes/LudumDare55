@@ -6,7 +6,7 @@ var horizontal_pressed = false
 
 const GRAVITY = 0.0
 const WALK_SPEED = 200
-const RAYCAST_LENGTH = 75
+const RAYCAST_LENGTH = 32
 
 enum DIRECTION {UP, RIGHT, DOWN, LEFT}
 

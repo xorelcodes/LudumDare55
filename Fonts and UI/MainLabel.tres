@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bl5w27vfbg1rv"]
+
+[ext_resource type="FontFile" uid="uid://cej251row1hq4" path="res://Fonts and UI/ferrum.otf" id="1_djf8a"]
+
+[resource]
+font = ExtResource("1_djf8a")
+font_size = 25
