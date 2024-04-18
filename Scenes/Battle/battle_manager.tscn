@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://d0ygjwq6f13i7"]
+[gd_scene load_steps=5 format=3 uid="uid://d0ygjwq6f13i7"]
 
 [ext_resource type="Texture2D" uid="uid://b8d6kafhuwdvg" path="res://Sprites/World/FFIV_DS_Plainbg.png" id="1_geoqf"]
-[ext_resource type="LabelSettings" uid="uid://bl5w27vfbg1rv" path="res://Fonts and UI/MainLabel.tres" id="2_ndi4w"]
-[ext_resource type="LabelSettings" uid="uid://clvf4qdb3e04q" path="res://Fonts and UI/Numbers.tres" id="3_u2jta"]
 [ext_resource type="Texture2D" uid="uid://b02aldjygsccm" path="res://Sprites/Characters/Player/AvaSprite.png" id="4_3aygw"]
+[ext_resource type="PackedScene" uid="uid://2ptyfnl21clh" path="res://Scenes/Interface/battle_interface.tscn" id="4_3qc8a"]
 [ext_resource type="Texture2D" uid="uid://ds2a7arkqdavx" path="res://Sprites/Characters/HAm7z9.png" id="5_701mm"]
 
 [node name="BattleManager" type="Node2D"]
@@ -18,56 +17,6 @@ region_rect = Rect2(8, 48, 664, 400)
 
 [node name="PlayerContainer" type="Node2D" parent="."]
 
-[node name="EnemyStats" type="ColorRect" parent="."]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 48.0
-offset_top = 288.0
-offset_right = 208.0
-offset_bottom = 352.0
-grow_vertical = 0
-color = Color(0, 0, 0, 0.392157)
-
-[node name="HBoxContainer" type="HBoxContainer" parent="EnemyStats"]
-offset_right = 89.0
-offset_bottom = 40.0
-
-[node name="EnemyLabel" type="Label" parent="EnemyStats/HBoxContainer"]
-layout_mode = 2
-text = "Enemy:"
-label_settings = ExtResource("2_ndi4w")
-
-[node name="EnemyHP" type="Label" parent="EnemyStats/HBoxContainer"]
-layout_mode = 2
-text = "100"
-label_settings = ExtResource("3_u2jta")
-
-[node name="PlayerStats" type="ColorRect" parent="."]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 432.0
-offset_top = 288.0
-offset_right = 592.0
-offset_bottom = 352.0
-grow_vertical = 0
-color = Color(0, 0, 0, 0.392157)
-
-[node name="HBoxContainer" type="HBoxContainer" parent="PlayerStats"]
-offset_right = 89.0
-offset_bottom = 40.0
-
-[node name="PlayerLabel" type="Label" parent="PlayerStats/HBoxContainer"]
-layout_mode = 2
-text = "Nablooo:"
-label_settings = ExtResource("2_ndi4w")
-
-[node name="PlayerHP" type="Label" parent="PlayerStats/HBoxContainer"]
-layout_mode = 2
-text = "100"
-label_settings = ExtResource("3_u2jta")
-
 [node name="AvaSprite" type="Sprite2D" parent="."]
 position = Vector2(528, 192)
 texture = ExtResource("4_3aygw")
@@ -77,3 +26,7 @@ position = Vector2(128, 192)
 texture = ExtResource("5_701mm")
 hframes = 3
 frame = 2
+
+[node name="BattleInterface" parent="." instance=ExtResource("4_3qc8a")]
+offset_top = 16.0
+offset_bottom = 16.0
